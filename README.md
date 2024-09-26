@@ -1,2 +1,2 @@
 # Taschenrechner Übung
-Grundrechenarten vorhanden. Schleife fragt nach Wiederholung.
+Grundrechenarten vorhanden. Try&Except für die Eingabe hinzugefügt. 
