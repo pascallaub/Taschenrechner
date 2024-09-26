@@ -15,9 +15,11 @@ def Taschenrechner():
             elif operator == 'sqrt':
                 ergebnis = math.sqrt(zahl1)
                 print(f"Das Ergebnis ist: {ergebnis}")
-                continue
-            else:
-                None
+                again = input("Willst du eine weitere Rechnung durchführen? j/n: ")
+                if again == 'j':
+                    continue
+                else:
+                    break
         except ValueError:
             print("Falsche Eingabe!")
             continue
@@ -45,12 +47,12 @@ def Taschenrechner():
         else:
             return("Ungültige Eingabe!")
 
-        return f"Das Ergebnis ist: {ergebnis}"
+        print(f"Das Ergebnis ist: {ergebnis}")
+        neue_rechnung = input("Möchtest du eine weitere Rechnung durchführen? j/n: ")
+        if neue_rechnung == 'j':
+            continue
+        else:
+            break
 
-while True:
-    print(Taschenrechner())
-    neue_rechnung = input("Möchtest du eine weitere Rechnung durchführen? j/n: ")
-    if neue_rechnung == 'j':
-        continue
-    else:
-        break
+Taschenrechner()
+
